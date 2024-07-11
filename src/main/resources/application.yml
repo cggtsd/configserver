@@ -1,0 +1,18 @@
+# eureka:
+#   instance:
+#     prefer-ip-address: true
+#   client:
+#     fetch-registry: true
+#     register-with-eureka: true
+#     service-url:
+#       defaultZone: http://localhost:8761/eureka  
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/cggtsd/microservices-configuration.git
+          clone-on-start: true
+server:
+  port: 8085            
